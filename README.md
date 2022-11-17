@@ -23,9 +23,23 @@ devtools::install_github("Drexel-UHC/tidySALURBAL")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example which shows how to use the
+`sanitize_codebook_var()` function to convert existing SALURBAL data
+identifiers to FAIR variables.
 
 ``` r
 library(tidySALURBAL)
-## basic example code
+
+
+## Sanatize `APSPM25MEANL1AD`
+sanitize_codebook_var('APSPM25MEANL1AD')
 ```
+
+    ## [1] "APSPM25MEAN"
+
+``` r
+## Sanatize `APSPM25MEANL1AD`
+sanitize_codebook_var('APSPM25MEANL1AD')
+```
+
+    ## [1] "APSPM25MEAN"
