@@ -17,5 +17,5 @@ A character value which is just the base variable name.
 Convert codebook variable to generic format
 }
 \examples{
-sanitize_codebook_var(var_raw = "OBESITY_L1AD_YYY")
+sanitize_codebook_var(var_raw = "OBESITY_L1AD_YYYY")
 }
