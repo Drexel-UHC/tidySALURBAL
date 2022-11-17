@@ -1,7 +1,7 @@
 #' Get the UHC server path for a certain file depending on the datasetid
 #'
 #' This function is useful for generating path names to the UHC server. It will only work if
-#' have uploaded your files to the UHC server `\\files.drexel.edu\colleges\SOPH\Shared\UHC\Projects\Wellcome_Trust\Data Methods Core\Dashboards\FAIR Renovations`
+#' have uploaded your files to the UHC server `\\\\files.drexel.edu\\colleges\\SOPH\\Shared\\UHC\\Projects\\Wellcome_Trust\\Data Methods Core\\Dashboards\\FAIR Renovations`
 #'
 #' @param dataset_id the folder name of your dataset in the FAIR Renovation folder.
 #' For example `APSL1AD`.
