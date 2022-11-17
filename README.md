@@ -21,25 +21,37 @@ You can install the development version of tidySALURBAL from
 devtools::install_github("Drexel-UHC/tidySALURBAL")
 ```
 
-## Example
-
-This is a basic example which shows how to use the
-`sanitize_codebook_var()` function to convert existing SALURBAL data
-identifiers to FAIR variables.
+To load the package call the following code.
 
 ``` r
 library(tidySALURBAL)
-
-
-## Sanatize `APSPM25MEANL1AD`
-sanitize_codebook_var('APSPM25MEANL1AD')
 ```
 
-    ## [1] "APSPM25MEAN"
+After you have loaded the package you can start using some of the utlity
+functions provided. Here are two useful ones.
+
+## sanitize_codebook_var()
+
+`sanitize_codebook_var()` converts existing SALURBAL data identifiers to
+FAIR variables aka `var_name`. In the example below we start with the
+salurbal data identifier of `APSPM25MEANL1AD` which contains some
+geographic information, we then use sanitize_codebook_var() to convert
+it to a purely variable identifier.
 
 ``` r
-## Sanatize `APSPM25MEANL1AD`
 sanitize_codebook_var('APSPM25MEANL1AD')
 ```
 
     ## [1] "APSPM25MEAN"
+
+## get_uhc_file_path()
+
+For this project we will use the UHC server as our data storage
+location. This function just helps generates paths that R can utilize.
+This is utilized in our setup chunks.
+
+``` r
+get_uhc_file_path(dataset_id = "APSL1AD", file = "APSL1AD_06132022.csv")
+```
+
+    ## [1] "\\\\files.drexel.edu\\colleges\\SOPH\\Shared\\UHC\\Projects\\Wellcome_Trust\\Data Methods Core\\Dashboards\\FAIR Renovations\\APSL1AD\\raw-data\\APSL1AD_06132022.csv"

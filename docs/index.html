@@ -69,22 +69,26 @@
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># install.packages("devtools")</span></span>
 <span><span class="fu">devtools</span><span class="fu">::</span><span class="fu"><a href="https://remotes.r-lib.org/reference/install_github.html" class="external-link">install_github</a></span><span class="op">(</span><span class="st">"Drexel-UHC/tidySALURBAL"</span><span class="op">)</span></span></code></pre></div>
+<p>To load the package call the following code.</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">tidySALURBAL</span><span class="op">)</span></span></code></pre></div>
+<p>After you have loaded the package you can start using some of the utlity functions provided. Here are two useful ones.</p>
 </div>
 <div class="section level2">
-<h2 id="example">Example<a class="anchor" aria-label="anchor" href="#example"></a>
+<h2 id="sanitize_codebook_var">sanitize_codebook_var()<a class="anchor" aria-label="anchor" href="#sanitize_codebook_var"></a>
 </h2>
-<p>This is a basic example which shows how to use the <code><a href="reference/sanitize_codebook_var.html">sanitize_codebook_var()</a></code> function to convert existing SALURBAL data identifiers to FAIR variables.</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va">tidySALURBAL</span><span class="op">)</span></span>
-<span></span>
-<span></span>
-<span><span class="co">## Sanatize `APSPM25MEANL1AD`</span></span>
-<span><span class="fu"><a href="reference/sanitize_codebook_var.html">sanitize_codebook_var</a></span><span class="op">(</span><span class="st">'APSPM25MEANL1AD'</span><span class="op">)</span></span></code></pre></div>
-<div class="sourceCode" id="cb3"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] "APSPM25MEAN"</span></span></code></pre></div>
-<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="co">## Sanatize `APSPM25MEANL1AD`</span></span>
-<span><span class="fu"><a href="reference/sanitize_codebook_var.html">sanitize_codebook_var</a></span><span class="op">(</span><span class="st">'APSPM25MEANL1AD'</span><span class="op">)</span></span></code></pre></div>
-<div class="sourceCode" id="cb5"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] "APSPM25MEAN"</span></span></code></pre></div>
+<p><code><a href="reference/sanitize_codebook_var.html">sanitize_codebook_var()</a></code> converts existing SALURBAL data identifiers to FAIR variables aka <code>var_name</code>. In the example below we start with the salurbal data identifier of <code>APSPM25MEANL1AD</code> which contains some geographic information, we then use sanitize_codebook_var() to convert it to a purely variable identifier.</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="reference/sanitize_codebook_var.html">sanitize_codebook_var</a></span><span class="op">(</span><span class="st">'APSPM25MEANL1AD'</span><span class="op">)</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] "APSPM25MEAN"</span></span></code></pre></div>
+</div>
+<div class="section level2">
+<h2 id="get_uhc_file_path">get_uhc_file_path()<a class="anchor" aria-label="anchor" href="#get_uhc_file_path"></a>
+</h2>
+<p>For this project we will use the UHC server as our data storage location. This function just helps generates paths that R can utilize. This is utilized in our setup chunks.</p>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu"><a href="reference/get_uhc_file_path.html">get_uhc_file_path</a></span><span class="op">(</span>dataset_id <span class="op">=</span> <span class="st">"APSL1AD"</span>, file <span class="op">=</span> <span class="st">"APSL1AD_06132022.csv"</span><span class="op">)</span></span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] "\\\\files.drexel.edu\\colleges\\SOPH\\Shared\\UHC\\Projects\\Wellcome_Trust\\Data Methods Core\\Dashboards\\FAIR Renovations\\APSL1AD\\raw-data\\APSL1AD_06132022.csv"</span></span></code></pre></div>
 </div>
 </div>
   </div>

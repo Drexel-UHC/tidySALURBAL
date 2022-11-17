@@ -18,7 +18,7 @@ a path to file you specified
 }
 \description{
 This function is useful for generating path names to the UHC server. It will only work if
-have uploaded your files to the UHC server `\\files.drexel.edu\colleges\SOPH\Shared\UHC\Projects\Wellcome_Trust\Data Methods Core\Dashboards\FAIR Renovations`
+have uploaded your files to the UHC server `\\\\files.drexel.edu\\colleges\\SOPH\\Shared\\UHC\\Projects\\Wellcome_Trust\\Data Methods Core\\Dashboards\\FAIR Renovations`
 }
 \examples{
 get_uhc_file_path(dataset_id = "APSL1AD", file = "APSL1AD_06132022.csv")
