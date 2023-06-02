@@ -10,10 +10,22 @@
     <loc>/index.html</loc>
   </url>
   <url>
+    <loc>/reference/compile_public_jinja.html</loc>
+  </url>
+  <url>
+    <loc>/reference/draw_schema_from_linkage.html</loc>
+  </url>
+  <url>
+    <loc>/reference/export_human_codebooks.html</loc>
+  </url>
+  <url>
     <loc>/reference/get_uhc_file_path.html</loc>
   </url>
   <url>
     <loc>/reference/hello.html</loc>
+  </url>
+  <url>
+    <loc>/reference/import_salurbal_xslx_cdbk.html</loc>
   </url>
   <url>
     <loc>/reference/index.html</loc>
@@ -23,5 +35,14 @@
   </url>
   <url>
     <loc>/reference/sanitize_codebook_var.html</loc>
+  </url>
+  <url>
+    <loc>/reference/snapshot_excel.html</loc>
+  </url>
+  <url>
+    <loc>/reference/unpack_year.html</loc>
+  </url>
+  <url>
+    <loc>/reference/validate_csv_utf8.html</loc>
   </url>
 </urlset>

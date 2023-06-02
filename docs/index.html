@@ -80,7 +80,7 @@
 <p><code><a href="reference/sanitize_codebook_var.html">sanitize_codebook_var()</a></code> converts existing SALURBAL data identifiers to FAIR variables aka <code>var_name</code>. In the example below we start with the salurbal data identifier of <code>APSPM25MEANL1AD</code> which contains some geographic information, we then use sanitize_codebook_var() to convert it to a purely variable identifier.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/sanitize_codebook_var.html">sanitize_codebook_var</a></span><span class="op">(</span><span class="st">'APSPM25MEANL1AD'</span><span class="op">)</span></span></code></pre></div>
-<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] "APSPM25MEAN"</span></span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="do">## [1] "APSPM25MEAN"</span></span></code></pre></div>
 </div>
 <div class="section level2">
 <h2 id="get_uhc_file_path">get_uhc_file_path()<a class="anchor" aria-label="anchor" href="#get_uhc_file_path"></a>
@@ -88,7 +88,7 @@
 <p>For this project we will use the UHC server as our data storage location. This function just helps generates paths that R can utilize. This is utilized in our setup chunks.</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="reference/get_uhc_file_path.html">get_uhc_file_path</a></span><span class="op">(</span>dataset_id <span class="op">=</span> <span class="st">"APSL1AD"</span>, file <span class="op">=</span> <span class="st">"APSL1AD_06132022.csv"</span><span class="op">)</span></span></code></pre></div>
-<div class="sourceCode" id="cb6"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="do">## [1] "\\\\files.drexel.edu\\colleges\\SOPH\\Shared\\UHC\\Projects\\Wellcome_Trust\\Data Methods Core\\Dashboards\\FAIR Renovations\\APSL1AD\\raw-data\\APSL1AD_06132022.csv"</span></span></code></pre></div>
+<div class="sourceCode" id="cb6"><pre class="sourceCode R"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="do">## [1] "\\\\files.drexel.edu\\colleges\\SOPH\\Shared\\UHC\\Projects\\Wellcome_Trust\\Data Methods Core\\Dashboards\\FAIR Renovations\\APSL1AD\\raw-data\\APSL1AD_06132022.csv"</span></span></code></pre></div>
 </div>
 </div>
   </div>
